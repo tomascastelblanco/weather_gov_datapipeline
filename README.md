@@ -13,7 +13,7 @@ This project is a weather data pipeline that retrieves weather information from 
 
 ---
 ## Assumptions:
-- The National Weather Service public API allows retrieving data only for the last 7 days, as shown on the API website and demonstrated by the script. (
+- The National Weather Service public API allows retrieving data only for the last 7 days, as shown on the API website and demonstrated by the script. 
 - The original request for "Average observed temperature for last week (Mon-Sun)" requires data beyond 7 days. Due to the API limitation, we calculate the "Average observed temperature for the last 7 days" instead.
 - The "Maximum wind speed change between two consecutive observations" is calculated based on the last 7 days of available data, as this is the maximum data we can retrieve from the API.
 
