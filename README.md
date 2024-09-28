@@ -65,9 +65,9 @@ This project is a weather data pipeline that retrieves weather information from 
 
 ## Running the Pipeline
 
-1. **Run the weather pipeline** to fetch and store weather data, it already include an station ID (032HE). Some other IDs::
+1. **Run the weather pipeline** to fetch and store weather data, it already include an station ID (032HE). Other example IDs: 048HI, 040SE.
    
    ```bash
    python weather_pipeline.py
 
-2. **Retrieving the Data** After running the pipeline and storing the weather data in the PostgreSQL database, you can retrieve the metrics using the SQL queries provided in the metrics.sql file.
+2. **Retrieving the Data** After running the pipeline and storing the weather data in the PostgreSQL database, you can retrieve the metrics using the SQL queries provided in the `metrics.sql` file.
