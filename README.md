@@ -37,13 +37,13 @@ This project is a weather data pipeline that retrieves weather information from 
     ```
 
 4. **.env file**: Edit the `.env` file in the project directory with the following variables to set up the connection to your PostgreSQL database:
-
+```bash
     DB_HOST=your_host
     DB_PORT=your_port
     DB_NAME=weather_db
     DB_USER=your_user
     DB_PASSWORD=your_password
-    
+ ```
 
 ---
 
