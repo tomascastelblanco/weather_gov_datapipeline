@@ -14,7 +14,7 @@ def fetch_stations():
         return response.json()['features']
     else:
         # if the request fails, print an error message and return an empty list
-        print(f"Failed to fetch stations: {response.status_code}")
+        print(f"failed to fetch stations: {response.status_code}")
         return []
 
 # function to check if a given station has latest observations data
@@ -41,7 +41,7 @@ def main():
     
     # if no stations were fetched, print a message
     if not stations:
-        print("no stations found.")
+        print("no stations found")
         return
 
     # randomly select 3 stations from the fetched list 
@@ -52,7 +52,7 @@ def main():
         station_id = station['properties']['stationIdentifier']  # to get the station ID
         station_name = station['properties']['name']  # to get the station name
         has_data = check_observations(station_id)  # to check if the station has observations data
-        print(f"Station ID: {station_id}, Name: {station_name}, Has Observations Data: {has_data}")
+        print(f"station ID: {station_id}, name: {station_name}, has observations data: {has_data}")
 
 if __name__ == "__main__":
     main()
