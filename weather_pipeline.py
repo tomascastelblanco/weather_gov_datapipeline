@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 # load environment variables from .env file
 load_dotenv()
 
-# catabase connection details from .env
+# database connection details from .env
 DB_HOST = os.getenv('DB_HOST')
 DB_PORT = os.getenv('DB_PORT')
 DB_NAME = os.getenv('DB_NAME')
